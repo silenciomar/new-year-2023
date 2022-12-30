@@ -1,0 +1,64 @@
+.globe {
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__base {
+    width: 60%;
+    height: 30%;
+    background-color: rgb(0, 187, 255);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    margin: auto;
+    border-radius: 100% 100% 100%;
+    border-bottom: 5px solid silver;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+  &__title {
+    font-family: "Sevillana", cursive;
+    text-align: center;
+    font-size: 20px;
+    margin: 25px auto 0;
+    padding: 17px 0;
+    background-color: rgb(70, 92, 216);
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid silver;
+    position: relative;
+    &::after, &::before {
+      content: "";
+      background-color: silver;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+    }
+    &::after {
+      left: 10%;
+    }
+    &::before {
+      right: 10%;
+    }
+  }
+  &__glass {
+    position: relative;
+    background-color: rgb(210 239 251 / 8%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin: 0 auto -52px;
+    z-index: 50;
+    box-shadow: 
+    inset 0px 0px 30px #c0c0c061, 
+    inset 0px 0px 30px #ffffff54,
+    inset 0 -20vmin 3vmin -9vmin white;
+  }
+}

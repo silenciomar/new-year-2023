@@ -1,0 +1,50 @@
+.tree {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+  &__star {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-bottom: -20px;
+    z-index: 1;
+  }
+  &1 {
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: -1;
+    border: 5px dotted red;
+  }
+  &2 {
+    width: 125px;
+    height: 100px;
+    background-color: darkgreen;
+    border: 5px dotted gold;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin: -45px 0;
+    z-index: -2;
+  }
+  &3 {
+    width: 150px;
+    height: 100px;
+    background-color: darkgreen;
+    border: 5px dotted greenyellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: -3;
+  }
+  &__base {
+    margin-top: -20px;
+    width: 40px;
+    height: 60px;
+    background-color: rgb(81, 40, 42);
+    z-index: -4;
+  }
+}
